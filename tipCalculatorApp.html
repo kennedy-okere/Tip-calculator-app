@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/52f1aa7175.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Oswald:wght@500&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="tipCalculatorApp.css" />
+    <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section>
+        <div class="container">
+          <div class="trans-con">
+            <p class="cli-para">Bill</p>
+            <i class="fa-solid fa-dollar-sign"></i>
+            <input type="number" class="gli" id="bill" placeholder="0"></input> 
+            <div class="cli-card">
+              <p class="cli-para">SelectTip %</p>
+            <div class="btn-container">
+              <button class="btn five-per"data-value ="5" >5%</button>
+              <button class="btn ten-per" data-value="10">10%</button>
+              <button class="btn fift-per" data-value="15">15%</button>
+              <button class="btn twenty-five-per" data-value="25">25%</button>
+              <button class="btn fifty-per"data-value="50">50%</button>
+              <input type="number" id="custom" placeholder="custom"></input>
+              <!--<button class="calculate" placeholder="check"></button>-->
+            </div>
+            </div>
+            <div class="small-card">
+              <i class="fa-solid fa-user"></i>
+              <label for="Number" class="cli-para">Number of people</label>
+              <p class="hidden" id="error-text">can't be zero or empty</p>
+              <input type="number" class="gli clink" id="number-of-pep" placeholder="0" />
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-child">
+              <div class="inner-cont">
+                <p class="card-para">Tip Amount</p>
+                <p class="card-para-1">/ person</p>
+              </div>
+              <div class="con">
+                <p class="amount-1">0.00</p>
+              </div>
+            </div>
+            <div class="card-child">
+              <div class="inner-cont">
+                <p class="card-para">Total</p>
+                <p class="card-para-1">/ person</p>
+              </div>
+              <div class="con">
+                <p class="amount-2">0.00</p>
+              </div>
+            </div>
+            <button class="reset btn">RESET</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="tipCalculatorApp.js"></script>
+  </body>
+</html>

@@ -38,12 +38,12 @@ btn.forEach(function (button) {
 
       const tipPerPerson = (bill * (percentage / 100)) / numPerPep;
       tipAmountPer.textContent = new Intl.NumberFormat('en-US').format(
-        tipPerPerson.toFixed(0)
+        +tipPerPerson.toFixed(0)
       );
 
       const totalPerPerson = bill / numPerPep + tipPerPerson;
       totalPerPer.textContent = new Intl.NumberFormat('en-US').format(
-        totalPerPerson.toFixed(0)
+        +totalPerPerson.toFixed(0)
       );
     }
   });
@@ -68,12 +68,12 @@ billInput.addEventListener('input', function () {
     textError.classList.add('hidden');
     const tipPerPerson = (bill * (billInput.value / 100)) / numPerPep;
     tipAmountPer.textContent = new Intl.NumberFormat('en-US').format(
-      tipPerPerson.toFixed(0)
+      +tipPerPerson.toFixed(0)
     );
 
     const totalPerPerson = billInput.value / numPerPep + tipPerPerson;
     totalPerPer.textContent = new Intl.NumberFormat('en-US').format(
-      totalPerPerson.toFixed(0)
+      +totalPerPerson.toFixed(0)
     );
   }
 });
